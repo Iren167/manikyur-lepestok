@@ -80,3 +80,6 @@
     this.tel.style.borderColor='';$('#ok').hidden=false;this.reset();
   });
 })();
+
+/* показывать плавающую кнопку записи только после первого экрана */
+(function(){var f=document.querySelector('.fab');if(!f)return;function t(){f.classList.toggle('show',window.scrollY>window.innerHeight*0.7)}window.addEventListener('scroll',t,{passive:true});t();})();
